@@ -15,6 +15,7 @@ pipeline {
             steps {
                 dir("simple-java-maven-app") {
                     sh "mvn clean install"
+                    sleep(10)
                 }
             }
         }
